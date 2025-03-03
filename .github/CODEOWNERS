@@ -1,0 +1,5 @@
+# This is a CODEOWNERS file that specifies who owns and reviews code changes
+# The '*' means this rule applies to all files in the repository
+# Multiple owners can be specified for the same pattern, separated by spaces
+# These users will be automatically requested to review any changes
+* @richtobey @rohan-huma @larachristian13
