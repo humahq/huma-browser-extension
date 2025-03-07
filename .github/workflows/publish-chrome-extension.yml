@@ -20,7 +20,15 @@ jobs:
 
       # Zip up the extension
     - name: Zip extension folder
-      run: zip -r extension.zip dist
+      run: |
+        echo "Zipping extension folder..."
+        ls -R dist   # List all files in dist for debugging
+        zip -r extension.zip dist
+        echo "Contents of extension.zip:"
+        unzip -l extension.zip
+        echo "File size details:"
+        ls -lh extension.zip
+    
 
       # Publish extension to Chrome Web Store
     - name: Publish to Chrome Web Store
