@@ -1,0 +1,10 @@
+{
+    "name": "Dummy Extension",
+    "description": "A placeholder extension for Chrome Web Store listing creation.",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
