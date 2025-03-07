@@ -18,16 +18,6 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Install dependencies
-      run: |
-       rm -rf node_modules
-       npm ci
-        
-
-      # Build your extension
-    - name: Build extension
-      run: npm run build
-
       # Zip up the extension
     - name: Zip extension folder
       run: zip -r extension.zip dist
