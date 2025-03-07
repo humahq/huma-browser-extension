@@ -32,10 +32,13 @@ jobs:
 
       # Publish extension to Chrome Web Store
     - name: Publish to Chrome Web Store
-      uses: trmcnvn/chrome-addon@v2
+      uses: chromewebstore/chromewebstore-upload-cli@v1
       with:
-        extension: ${{ secrets.EXTENSION_ID }}
-        zip: extension.zip
+        extension-id: ${{ secrets.EXTENSION_ID }}
         client-id: ${{ secrets.CLIENT_ID }}
         client-secret: ${{ secrets.CLIENT_SECRET }}
         refresh-token: ${{ secrets.REFRESH_TOKEN }}
+        source-file: "extension.zip"      # The file you zipped earlier
+        auto-publish: true               # Automatically publish if upload succeeds
+    
+    
