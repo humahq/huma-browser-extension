@@ -1,19 +1,8 @@
 {
-    "name": "browser-extension-starter-template",
-    "version": "0.0.1",
-    "description": "Chrome extension",
-    "homepage": "https://wwww.stefanvd.net",
-    "author": "Stefan Van Damme",
-    "license": "GPL-2.0",
-    "repository": {
-      "type": "git",
-      "url": "git@github.com:stefanvd/browser-extension-starter-template.git"
-    },
-    "devDependencies": {
-      "eslint": "^7.17.0",
-      "prettier": "^2.1.2"
-    },
+    "name": "huma-chrome-plugin",
+    "version": "1.0.0",
     "scripts": {
-      "dist": "zip -r dist/$npm_package_name-$npm_package_version.zip src"
+      "build": "mkdir -p dist && cp background.js content.js browser-polyfill.js manifest.json dist/"
     }
   }
+  

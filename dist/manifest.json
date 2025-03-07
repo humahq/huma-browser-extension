@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "HUMA BROWSER EXTENSION",
+  "version": "0.0.1",
+  "description": "browser extension by Huma.ai",
+  "permissions": [
+    "tabs",
+    "windows",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.huma.ai/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["browser-polyfill.js", "content.js"]
+    }
+  ]
+}
