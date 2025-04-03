@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Huma.ai browser extension",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "browser extension by Huma.ai",
   "permissions": [
     "tabs",

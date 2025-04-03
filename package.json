@@ -2,7 +2,7 @@
     "name": "huma-chrome-plugin",
     "version": "1.0.0",
     "scripts": {
-      "build": "mkdir -p dist && cp background.js content.js browser-polyfill.js manifest.json dist/"
+      "build": "mkdir -p dist && cp -r background.js content.js browser-polyfill.js manifest.json icons dist/"
     }
   }
   
